@@ -1,0 +1,5 @@
+fastapi           # Web framework for building APIs
+uvicorn           # ASGI server to run FastAPI
+requests          # To make HTTP API calls to MISO
+pydantic          # To validate and serialize data models
+python-dotenv     # Optional: load API keys or config from .env files
