@@ -10,3 +10,5 @@ Provides tools to pull, process, and analyze electricity market data from the MI
 Supports historical and real-time price, load, generation, and forecast data.
 
 ## 2. PJM API Project
+
+## 3 CAISO API Project
