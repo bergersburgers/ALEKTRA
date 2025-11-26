@@ -1,0 +1,26 @@
+# Environment variables and secrets
+.env
+*.key
+*.json
+credentials.json
+*-key.json
+
+# Python
+*.pyc
+__pycache__/
+venv/
+*.egg-info/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# Node/Frontend
+node_modules/
+.next/
+*.log
+
+# IDE and OS
+.vscode/
+.idea/
+.DS_Store
+

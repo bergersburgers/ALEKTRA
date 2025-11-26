@@ -1,14 +1,57 @@
-# ALEKTRA
+# ALEKTRA - Energy Markets Data Platform
 
-ALEKTRA is a multi-project repository focused on energy and climate data analytics, market forecasting, and AI-driven tools for renewable energy integration. This repo consolidates multiple projects related to electricity markets, forecasting, and energy optimization.
+Bloomberg Terminal for US energy markets, starting with PJM and MISO.
 
-# Projects Overview
-## 1. MISO API Project
+## Project Structure
+```
+ALEKTRA/
+├── backend/
+│   ├── functions/        # Cloud Functions for data ingestion
+│   ├── scripts/          # Utility scripts and data processing
+│   └── requirements.txt  # Python dependencies
+├── frontend/             # Web application frontend
+├── notebooks/            # Jupyter notebooks for exploration
+├── infrastructure/       # GCP deployment configs
+├── docs/                 # Documentation
+└── README.md
+```
 
-Provides tools to pull, process, and analyze electricity market data from the MISO ISO.
+## Tech Stack
 
-Supports historical and real-time price, load, generation, and forecast data.
+- **Cloud:** Google Cloud Platform
+- **Backend:** Python, Cloud Functions, FastAPI
+- **Database:** BigQuery, Cloud Storage
+- **Data Sources:** PJM, MISO ISOs
 
-## 2. PJM API Project
+## Getting Started
 
-## 3 CAISO API Project
+### Prerequisites
+- Python 3.9+
+- GCP account with project access
+- PJM DataMiner credentials
+
+### Local Development
+```bash
+# Clone the repository
+git clone <your-repo-url>
+cd ALEKTRA
+
+# Set up Python virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r backend/requirements.txt
+```
+
+## Current Status
+
+🚧 MVP in development
+- Setting up GCP infrastructure  
+- Building PJM data ingestion pipeline
+- Target: Day-ahead prices, Real-time prices, Demand forecasts
+
+## Data Pipeline Architecture
+
+See `docs/` for detailed architecture documentation.
+
